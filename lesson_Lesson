@@ -1,0 +1,103 @@
+package lesson;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+	
+	//@SuppressWarnings("serial")
+	//public class Lesson extends JPanel implements KeyListener {
+		//private int x = 500,y = 500, radius = 10, dx = 0,dy = 0;
+		
+		/*public Lesson() {
+			//System.out.println("Second");	
+			//setSize(1000, 1000);
+			//setPreferredSize(new Dimension(1000, 1000));
+			//setFocusable(true);
+			//addKeyListener(this);
+
+		}*/
+	
+	
+		/*public static void main(String arg[]) {
+			//System.out.println("first");										
+			//Lesson game = new Lesson();
+			//JFrame f = new JFrame();
+			//f.add(new JLabel(new ImageIcon("Libraries/Pictures/heart.png")));
+			//f.setResizable(false);
+			//f.add(game);
+			//f.pack();
+			// f.setBackground(Color.black); // doesn't work
+			//f.setLocationRelativeTo(null);
+			//f.setTitle("Keen");
+			//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			//f.setVisible(true);
+	
+			
+		}
+		*/
+		
+//		public void paint(Graphics g) {
+			//walls ("||" means OR)
+		/*
+			  if ( x <= 0 ) 		{dx =  Math.abs(dx);}
+			  if (x >= getWidth())	{dx = -Math.abs(dx);}
+			  if ( y <= 0 ) 		{ dy = 	Math.abs(dy);}
+			  if (y >= getWidth())	{ dy = -Math.abs(dy);}
+		*/	 
+															//movement
+			//x += dx;
+			//y += dy;
+			//g.setColor(Color.BLACK);
+			//g.fillRect(0, 0, getWidth(), getHeight());
+			//g.setColor(Color.YELLOW);
+			//g.fillOval(x - radius, y - radius, radius*2, radius*2);
+			//g.dispose();
+			//repaint();
+			
+			/*try {
+				Thread.sleep(17);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+*/
+		
+
+		/*public void keyPressed(KeyEvent e) {
+			int c = e.getKeyCode();
+			if (c == KeyEvent.VK_W) {
+				dy-= 10;
+			}
+			if (c == KeyEvent.VK_S) {
+				dy+=10;
+
+			}
+			if (c == KeyEvent.VK_A) {
+				dx-=5;
+			}
+			if (c == KeyEvent.VK_D) {
+				dx+=5;
+			}
+		}
+		@Override
+		public void keyTyped(KeyEvent e) {
+			// TODO Auto-generated method stub
+
+		}
+
+		@Override
+		public void keyReleased(KeyEvent e) {
+			// TODO Auto-generated method stub
+
+		}*/
+	}
