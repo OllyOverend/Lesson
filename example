@@ -1,0 +1,74 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.io.IOException;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class example extends JPanel {
+
+	
+	private static SorryNelson S;
+	private Clock m;
+	String timer;
+	static int t = 60;
+	
+
+	public example() {
+		setSize(1000, 1000);
+		setPreferredSize(new Dimension(1000, 1000));
+		setBackground(Color.BLACK);
+		setFocusable(true);
+		m = new Clock();
+
+
+
+	}
+
+	public void paint(Graphics g) {
+
+		g.setColor(Color.BLACK);
+		g.fillRect(0, 0, getWidth(), getHeight());
+		m.draw(g);
+		
+		String timer = String.valueOf(t);
+		g.drawString(timer, 490, 500);
+		g.dispose();
+		repaint();
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.print(t);
+		if ( t == -1){
+			S.kabum();
+		
+	}
+		t--;
+	}
+
+	public static void main(String arg[]) {
+		example game = new example();
+		JFrame f = new JFrame();
+		f.add(new JLabel(new ImageIcon("Libraries/Pictures/heart.png")));
+		f.setResizable(false);
+		f.add(game);
+		f.pack();
+		
+		f.setTitle("example");
+		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setLocationRelativeTo(null);
+		f.setVisible(true);
+		
+	}
+
+}
