@@ -1,0 +1,23 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Clock {
+public Clock() {
+	
+}
+int w = 10,h = 10,r = 200,x = 500,y = 500;
+double a = 264,v = 6;
+public void draw(Graphics g){
+	this.move();
+	g.setColor(Color.WHITE);
+	g.fillOval(x-w, y-h, w*2, h*2);
+}
+
+public void move(){
+	System.out.println(a);
+	a += v;
+	x = (int) (500 + r*Math.cos(Math.toRadians(a)));
+	y = (int) (500 + r*Math.sin(Math.toRadians(a)));
+}
+}
+	
